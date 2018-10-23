@@ -41,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BAB3A441217EB96100C32938 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C38E276E217E6706005B5FB1 /* Assets.xcassets */,
+				C38E2767217E6700005B5FB1 /* AppDelegate.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C38E275B217E66FF005B5FB1 = {
 			isa = PBXGroup;
 			children = (
@@ -63,9 +72,7 @@
 				C38E2779217E6CBB005B5FB1 /* Model */,
 				C38E277A217E6CD7005B5FB1 /* View */,
 				C38E277B217E6CDD005B5FB1 /* Controller */,
-				C38E2767217E6700005B5FB1 /* AppDelegate.swift */,
-				C38E276B217E6700005B5FB1 /* Main.storyboard */,
-				C38E276E217E6706005B5FB1 /* Assets.xcassets */,
+				BAB3A441217EB96100C32938 /* Supporting Files */,
 				C38E2770217E6706005B5FB1 /* LaunchScreen.storyboard */,
 				C38E2773217E6706005B5FB1 /* Info.plist */,
 			);
@@ -85,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				C38E2782217E6D89005B5FB1 /* MemoryCardView.swift */,
+				C38E276B217E6700005B5FB1 /* Main.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";

@@ -15,7 +15,7 @@ class TempleCardView : UIView {
     
     private struct Card {
         static let backImageName = "cardback"
-        static let templeImageName = "RookSquare"
+        static let templeImageName = "aba-nigeria-temple-lds-273999-mobile.jpg"
     }
     
     // MARK: - Properties
@@ -91,18 +91,18 @@ class TempleCardView : UIView {
         UIRectFill(bounds)
     }
     
-//    private func drawCenterImage() {
-//        guard let templeImage = UIImage(named: temple.filename) else {
-//            return
-//        }
-//
-//        let width = bounds.width - 2 * centerImageMargin
-//        let templeImageRect = CGRect(x: centerImageMargin,
-//                                   y: (bounds.height - width) / 2,
-//                                   width: width,
-//                                   height: width)
-//        rookImage.draw(in: rookImageRect)
-//    }
+    private func drawCenterImage() {
+        guard let templeImage = UIImage(named: Card.templeImageName) else {
+            return
+        }
+
+        let width = bounds.width - 2 * centerImageMargin
+        let templeImageRect = CGRect(x: centerImageMargin,
+                                   y: (bounds.height - width) / 2,
+                                   width: width,
+                                   height: width)
+        templeImage.draw(in: templeImageRect)
+    }
     
     //    private func drawCenterSquare() {
     //        let square = UIBezierPath()

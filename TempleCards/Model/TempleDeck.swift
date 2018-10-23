@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct MemoryDeck {
+struct TempleDeck {
 //    private var cards: [MemoryCard] = []
     
-    let temples = [
+    var temples = [
         Temple(filename: "aba-nigeria-temple-lds-273999-mobile.jpg", name: "Aba Nigeria"),
         Temple(filename: "accra-ghana-temple-lds-249027-mobile.jpg", name: "Accra Ghana"),
         Temple(filename: "albuquerque-temple-lds-137885-mobile.jpg", name: "Albuquerque New Mexico"),
@@ -66,6 +66,8 @@ struct MemoryDeck {
 //        }
 //    }
     
+    static var sharedInstance = TempleDeck()
+    
     var count: Int {
         return temples.count
     }
@@ -74,8 +76,8 @@ struct MemoryDeck {
     //        cards.remove(at: index)
     //    }
     
-    //    mutating func shuffle() {
-    //        cards.shuffle()
-    //    }
+        mutating func shuffle() {
+            temples.shuffle()
+        }
 }
 
