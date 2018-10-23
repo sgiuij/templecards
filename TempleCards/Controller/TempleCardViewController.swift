@@ -39,35 +39,20 @@ class TempleCardViewController : UIViewController {
     }
     
     @IBAction func goToPrevious(_ sender: Any) {
-        print("111111111")
-        print(all_temples.count)
-        print(current_index)
         current_index -= 1
         if (current_index < 0){
             current_index = all_temples.count-1
-            print("reset current index")
-            print(current_index)
-            print(all_temples.count-1)
         }
-        print("dddd")
-        print(current_index)
         updateTemple(index: current_index)
     }
     
     @IBAction func goToNext(_ sender: Any) {
-        print("aaa")
+        current_index += 1
+        if (current_index >= all_temples.count){
+            current_index = 0
+        }
+        updateTemple(index: current_index)
     }
-    //    @IBAction func goToNext(_ sender: Any) {
-//        print("next button")
-//        print(current_index)
-//        current_index += 1
-//        if (current_index >= all_temples.count){
-//            current_index = 0
-//            print("set to 0")
-//            print(current_index)
-//        }
-//        updateTemple(index: current_index)
-//    }
     
     @IBAction func resetView(_ sender: Any) {
         scoreLabel.text = "Score: 0"

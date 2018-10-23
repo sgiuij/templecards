@@ -44,7 +44,6 @@
                                             <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="goToNext:" destination="jbW-o1-xtd" eventType="touchUpInside" id="Xka-z0-nfX"/>
                                             <action selector="goToPrevious:" destination="jbW-o1-xtd" eventType="touchUpInside" id="Vaa-dk-ZAy"/>
                                         </connections>
                                     </button>
@@ -60,7 +59,6 @@
                                         </state>
                                         <connections>
                                             <action selector="goToNext:" destination="jbW-o1-xtd" eventType="touchUpInside" id="mwr-5H-0lu"/>
-                                            <action selector="goToPrevious:" destination="jbW-o1-xtd" eventType="touchUpInside" id="f6g-G9-BAy"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -136,6 +134,7 @@
                         <outlet property="nextBtn" destination="dso-dN-Y5g" id="YMQ-G9-VJC"/>
                         <outlet property="previousBtn" destination="MrX-Kz-ymd" id="AAs-XS-xdf"/>
                         <outlet property="resetBtn" destination="IgF-aK-A1z" id="No1-Tl-YfJ"/>
+                        <outlet property="scoreLabel" destination="WZp-wY-4FH" id="dSl-1F-UpQ"/>
                         <outlet property="segmentedControl" destination="f1r-dQ-RPn" id="97x-YE-kzZ"/>
                         <outlet property="templeImage" destination="UcJ-6O-dnL" id="VDg-wZ-oJH"/>
                         <outlet property="templeLabel" destination="vcw-aM-0Am" id="sTW-bK-JWA"/>
