@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TempleCards/Controller/TempleCardViewController.swift"
-            timestampString = "561980961.774563"
+            timestampString = "562000109.060854"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "goToPrevious(_:)"
             landmarkType = "7">
          </BreakpointContent>
