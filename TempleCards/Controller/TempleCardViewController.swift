@@ -109,13 +109,15 @@ class TempleCardViewController : UIViewController, UIPickerViewDelegate, UIPicke
         updateTemple(index: current_index)
     }
     
-    @IBAction func resetView(_ sender: Any) {
-        if (is_study == true){
-            studyMode()
-        }else{
-            quizMode()
-        }
+//    @IBAction func resetQuiz(_ sender: Any) {
+//        quizMode()
+//
+//    }
+    @IBAction func resetBounce(_ sender: Any) {
+        quizMode()
     }
+    //    @IBAction func resetView(_ sender: Any) {
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -123,6 +125,10 @@ class TempleCardViewController : UIViewController, UIPickerViewDelegate, UIPicke
     }
     
     //helpers
+    
+    private func updateScore(){
+        scoreLabel.text = scoreString + String(score)
+    }
     private func randomChoices()->String{
         return all_temples.randomElement()!.name
     }
@@ -155,6 +161,7 @@ class TempleCardViewController : UIViewController, UIPickerViewDelegate, UIPicke
     
     private func quizMode(){
         score = 0
+        updateScore()
         initView()
         finalScoreLabel.isHidden = true
         correctWrongLabel.isHidden = true
