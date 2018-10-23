@@ -6,4 +6,8 @@
 //  Copyright © 2018 UE Shen. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class TempleCardViewController : UIViewController {
+    
+}
