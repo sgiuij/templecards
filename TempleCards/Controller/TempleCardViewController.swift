@@ -70,10 +70,10 @@ class TempleCardViewController : UIViewController, UIPickerViewDelegate, UIPicke
         {
         case 0:
             is_study = true
-            studyMode()
+            self.studyMode()
         case 1:
             is_study = false
-            quizMode()
+            self.quizMode()
         default:
             break
         }
@@ -110,8 +110,6 @@ class TempleCardViewController : UIViewController, UIPickerViewDelegate, UIPicke
     }
     
     @IBAction func resetView(_ sender: Any) {
-        scoreLabel.text = "Score: 0"
-        initView()
         if (is_study == true){
             studyMode()
         }else{
@@ -142,6 +140,7 @@ class TempleCardViewController : UIViewController, UIPickerViewDelegate, UIPicke
     
     
     private func studyMode(){
+        initView()
         finalScoreLabel.isHidden = true
         correctWrongLabel.isHidden = true
         yourAnswer.isHidden = true
@@ -155,6 +154,8 @@ class TempleCardViewController : UIViewController, UIPickerViewDelegate, UIPicke
     }
     
     private func quizMode(){
+        score = 0
+        initView()
         finalScoreLabel.isHidden = true
         correctWrongLabel.isHidden = true
         yourAnswer.isHidden = true
@@ -178,7 +179,6 @@ class TempleCardViewController : UIViewController, UIPickerViewDelegate, UIPicke
     }
     
     private func updateUI(){
-        self.initView()
         studyMode()
     }
     
